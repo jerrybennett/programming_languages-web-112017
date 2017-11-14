@@ -6,7 +6,7 @@ def reformat_languages(languages)
       attributes.each do |k, v|
         new_hash[lang] = {k => v}
         new_hash[lang][:style] = [style]
-        new_hash[:javascript][:style][[style].unshift(:oo)]
+        new_hash[:javascript][:style][style.unshift(:oo)]
       end
     end
   end
