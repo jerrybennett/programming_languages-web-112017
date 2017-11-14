@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 def reformat_languages(languages)
   new_hash = {}
   languages.each do |style, hash|
@@ -11,7 +11,7 @@ def reformat_languages(languages)
   end
   new_hash.each do |lang, data|
     data.each do |i|
-      i.each do |k, v|
+      each do |k, v|
         if lang == :javascript
           [lang][k][].unshift(:oo)
         end
@@ -19,5 +19,5 @@ def reformat_languages(languages)
     end
   end
   new_hash
-  binding.pry
+  # binding.pry
 end
