@@ -13,7 +13,7 @@ def reformat_languages(languages)
     data.each do |i|
       i.each do |k, v|
         if lang == :javascript
-          [lang][k][v].unshift(:oo)
+          [lang][k][].unshift(:oo)
         end
       end
     end
