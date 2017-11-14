@@ -4,9 +4,11 @@ def reformat_languages(languages)
   languages.each do |style, hash|
     hash.each do |lang, attributes|
       attributes.each do |k, v|
-        new_hash[lang] = {k => v}
-        new_hash[lang][:style] = [style]
-        new_hash[:javascript][:style][style.unshift(:oo)]
+        if new_hash.empty?
+					new_hash[lang] = {k => v, :style => [style] }
+				elsif !new_.empty? && lang == :javascript
+					new_hash[lang][:style] << style
+				end
       end
     end
   end
