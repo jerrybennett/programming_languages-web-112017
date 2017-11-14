@@ -8,6 +8,7 @@ def reformat_languages(languages)
         new_hash[lang][:style] = [style]
       end
     end
+    new_hash[:javascript][:style][].unshift(:oo)
   end
   new_hash
   # binding.pry
