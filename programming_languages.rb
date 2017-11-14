@@ -7,7 +7,7 @@ def reformat_languages(languages)
         new_hash[lang] = {type => type_value, :style => [style]}
         # new_hash[lang][:style] = [style]
         # if new_hash[lang] == :javascript
-          new_hash[:javascript][:style].unshift(:oo)
+          new_hash[:javascript][:style][].unshift(:oo)
         # end
       end
     end
