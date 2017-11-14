@@ -10,8 +10,8 @@ def reformat_languages(languages)
             new_hash[lang][:style] = [t]
           end
         end
-        if new_hash[lang][:style]
-          new_hash[lang][:style] << style
+        # if new_hash[lang][:style]
+        #   new_hash[lang][:style] << style
 
       end
     end
