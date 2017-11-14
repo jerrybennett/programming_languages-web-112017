@@ -12,7 +12,7 @@ def reformat_languages(languages)
   new_hash.each do |lang, data|
     data.each do |type, style|
       if lang == :javascript
-        [lang][style][]unshift(:oo)
+        [lang][style][].unshift(:oo)
       end
     end
   end
