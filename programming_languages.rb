@@ -5,7 +5,10 @@ def reformat_languages(languages)
     hash.each do |lang, attributes|
       attributes.each do |k, v|
         new_hash[lang] = {:type => v, :style => [style]}
+        style.each do |t, d|
 
+        end
+        if new_hash[lang][:style]
           new_hash[lang][:style] << style
 
       end
